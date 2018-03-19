@@ -1,0 +1,1 @@
+console.log('Load static file complected')
