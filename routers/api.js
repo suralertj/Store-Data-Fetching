@@ -1,15 +1,12 @@
 const express = require('express');
-const { data } = require('../data/storeData.json')
-const { products } = data
 const router = express.Router();
 
-
-router.get('/', function(req,res) {
-    res.locals.title = 'Project Store'
-    res.locals.message = 'Welcome to my store'
-    res.render('index')
+router.get('/', function (req,res) {
+    res.send('you got API')
 })
 
-
+router.get('/all', function (req,res) {
+    res.send('you got all product')
+})
 
 module.exports = router;
