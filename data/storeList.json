@@ -1,0 +1,11 @@
+{
+    "data": {
+        "title": "List of product category",
+        "products": [
+            "watch",
+            "camera",
+            "radio",
+            "calculator"
+        ]
+    }
+}

@@ -1,19 +1,25 @@
 extends layout
 block content
     h1= title
-    p= message
-
-        div(class='ui divided unstackable items')
-            each product in products
-                div(class='item')
-                    div(class='image')
-                        img(src=`${product.url}` )             
-                    div(class='content')
-                        div(class='header')= product.name
-                        div(class='meta')
-                            span= product.price
-                        div(class='description')
-                            p= product.description
-                        div(class='extra')
-                            p available
+    form(class='ui form')
+        div(class='field')
+            label Category
+            select(class='ui dropdown' id='product' name='dropdown')
+                option(value='') Select
+                option(value='radio') Radio
+                option(value='calulator') Calulator
+    
+    div(class='ui divided unstackable items' id='itemContainer' )
+        //- each product in products
+            div(class='item')
+                div(class='image')
+                    img(src=`${product.url}` )             
+                div(class='content')
+                    div(class='header')= product.name
+                    div(class='meta')
+                        span= product.price
+                    div(class='description')
+                        p= product.description
+                    div(class='extra')
+                        p available
                         

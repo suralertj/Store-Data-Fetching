@@ -8,6 +8,7 @@ const { products } = data
 
 app.set('view engine', 'pug')
 app.use(express.static('public'))
+
 app.use('/api', api)
 
 app.get('/', function(req,res) {
@@ -17,6 +18,10 @@ app.get('/', function(req,res) {
     res.render('index')
 })
 
+app.route('/store')
+    .get( function(req,res){
+        res.send( products )
+    })
 
 
 app.listen( 3000 )

@@ -4,28 +4,28 @@
         "products": [
             {
                 "id": "1",
-                "name": "Watch",
+                "name": "watch",
                 "price": "$1,250",
                 "url": "/img/product1.jpg",
                 "description": "This is a product description of watch"
             },
             {
                 "id": "2",
-                "name": "Radio",
+                "name": "radio",
                 "price": "$2,450",
                 "url": "/img/product2.jpg",
                 "description": "This is a product description of radio"
             },
             {
                 "id": "3",
-                "name": "Calculator",
+                "name": "calculator",
                 "price": "$3,120",
                 "url": "/img/product3.jpg",
                 "description": "This is a product description of watch"
             },
             {
                 "id": "4",
-                "name": "Film Camera",
+                "name": "camera",
                 "price": "$4,950",
                 "url": "/img/product4.jpg",
                 "description": "This is a product description of radio"
